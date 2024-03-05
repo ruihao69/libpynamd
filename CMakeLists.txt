@@ -12,6 +12,7 @@ add_compile_options(-march=native)
 
 # add_include direcotry
 include_directories(${CMAKE_SOURCE_DIR}/include)
+message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}/include")
 
 
 # Find Eigen3 and pybind11
