@@ -11,14 +11,14 @@ add_compile_options(-Wall -Wextra -Wpedantic) # Enable warning
 add_compile_options(-march=native)
 
 # add_include direcotry
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 
 # Find Eigen3 and pybind11
-set(EIGEN3_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/third_party/eigen/)
+set(EIGEN3_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/third_party/eigen/)
 include_directories(${EIGEN3_INCLUDE_DIR})
 
-add_subdirectory(third_party/pybind11)
+add_subdirectory(${CMAKE_SOURCE_DIR}/third_party/pybind11)
 
 
 # Add binding library
