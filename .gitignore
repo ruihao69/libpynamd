@@ -44,7 +44,7 @@
 **/CMakeScripts
 **/compile_commands.json
 
-include/divisible/*
+# include/divisible/*
 
 
 ## Local 
@@ -53,7 +53,7 @@ include/divisible/*
 
 build/**/*
 
-include/*
+# include/*
 lib/*
 bin/*
 test/test_runner
